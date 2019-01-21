@@ -3,10 +3,9 @@ import { Box, FormField, Button, Form } from "grommet";
 import { Add } from "grommet-icons";
 
 class SpendingForm extends Component {
-  onSubmit = (value) => {
+  onSubmit = value => {
     this.props.addNewSpending(value);
-  }
-
+  };
 
   render() {
     return (
@@ -22,12 +21,15 @@ class SpendingForm extends Component {
             name="value"
             placeholder="Value"
             required
-            validate={{ regexp: /^[0-9]*$/, message: "only numbers are acceptable" }}
+            validate={{
+              regexp: /^[0-9]*$/,
+              message: "only numbers are acceptable"
+            }}
           />
           <Button
             type="submit"
             icon={<Add />}
-            margin={{ "bottom": "large", "top": "small"}}
+            margin="small"
             alignSelf="center"
             label="Add spending"
             onClick={() => {}}

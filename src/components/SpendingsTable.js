@@ -5,7 +5,6 @@ const SpendingsTable = props => {
     {
       property: "name",
       header: <Text>Name</Text>,
-      primary: true,
       footer: "Total"
     },
     {
@@ -19,15 +18,23 @@ const SpendingsTable = props => {
   return (
     <Box
       alignSelf="center"
+      alignContent="stretch"
       width="large"
       round
+      animation="fadeIn"
       margin="small"
       border={{ color: "brand", side: "all", size: "medium" }}
     >
       {!Array.isArray(props.spendingData) || !props.spendingData.length ? (
         <Text alignSelf="center">There are no spendings for selected day.</Text>
       ) : (
-        <DataTable margin="medium" columns={columns} data={props.spendingData} sortable />
+        <DataTable
+          margin="medium"
+          primaryKey="key"
+          columns={columns}
+          data={props.spendingData}
+          sortable
+        />
       )}
     </Box>
   );

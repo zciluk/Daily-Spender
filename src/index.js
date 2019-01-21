@@ -17,26 +17,31 @@ import Moment from "moment";
 
 const DATA = [
   {
+    key: 0,
     datestamp: "01/20/2019",
     name: "ticket",
     value: 3.2
   },
   {
+    key: 1,
     datestamp: "01/20/2019",
     name: "magazine",
     value: 30
   },
   {
+    key: 2,
     datestamp: "01/20/2019",
     name: "pint beer",
     value: 10
   },
   {
+    key: 3,
     datestamp: "01/20/2019",
     name: "course",
     value: 45
   },
   {
+    key: 4,
     datestamp: "01/19/2019",
     name: "lol",
     value: 35
@@ -65,34 +70,56 @@ class App extends Component {
     monthlyBudget: 1500,
     spendingData: DATA
   };
+
+  // calculates spendings in current month
   calculateMontlySpendings = () => {
     let monthlySpendings = 0;
-    const parsedDate = Moment(this.state.selectedDate, "MM-DD-YYYY");
+
     this.state.spendingData.forEach(spending => {
+      const parsedDate = Moment(spending.datestamp, "MM-DD-YYYY");
       if (
         parsedDate.month() === this.state.selectedDate.month() &&
         parsedDate.year() === this.state.selectedDate.year()
       ) {
-        monthlySpendings += spending.value;
+        monthlySpendings += Number(spending.value);
       }
     });
-    console.log(monthlySpendings);
+
     return monthlySpendings;
   };
-  addNewSpending = (value) => {
-    const newelement = {
-        datestamp: this.state.selectedDate.format("L"),
-        name: value.name,
-        value: value.value
-      };
-    this.setState({spendingData:[...this.state.spendingData, newelement]});
+  // generates unique key value for new elements in array
+  generateUniqueKey = () => {
+    let key = 0;
+    if (this.state.spendingData.length > 0) {
+      key = Math.max(...this.state.spendingData.map(object => object.key), 0);
+      key++;
+    }
+    return key;
   };
+  // adds new spending to DATA array
+  addNewSpending = value => {
+    const newelement = {
+      key: this.generateUniqueKey(),
+      datestamp: this.state.selectedDate.format("L"),
+      name: value.name,
+      value: Number(value.value)
+    };
+    this.setState({ spendingData: [...this.state.spendingData, newelement] });
+  };
+
+  // calculates Daily Budget UI label
   calculateDailyBudget = () => {
+    let daysLeft =
+      this.state.selectedDate.daysInMonth() - this.state.selectedDate.date();
+
+    daysLeft = daysLeft === 0 ? 1 : daysLeft;
     const dailyBudget =
-      (this.state.monthlyBudget - this.calculateMontlySpendings()) /
-      this.state.selectedDate.daysInMonth();
+      (this.state.monthlyBudget - this.calculateMontlySpendings()) / daysLeft;
+
     return Math.round(dailyBudget);
   };
+
+  // calculates spendings for selected date
   spendingsPerDay = () => {
     const finalArray = [];
     this.state.spendingData.forEach(spending => {
@@ -101,36 +128,43 @@ class App extends Component {
     });
     return finalArray;
   };
+  // MAIN render function for main component
   render() {
     const { selectedDate } = this.state;
     const { monthlyBudget } = this.state;
 
     return (
       <Grommet theme={theme} full>
-        <Box fill>
-            <Box background="brand">
-          <Heading level="3" margin="small" alignSelf="center">
-            Daily Spender
-          </Heading>
-          <Box tag="header" align="center" justify="center" direction="row">
-            <Button
-              icon={<CaretPrevious />}
-              margin="small"
-              onClick={event =>
-                this.setState({
-                  selectedDate: selectedDate.subtract(1, "days")
-                })
-              }
-            />
-            <Text>{selectedDate.format("LL")}</Text>
-            <Button
-              icon={<CaretNext />}
-              margin="small"
-              onClick={event =>
-                this.setState({ selectedDate: selectedDate.add(1, "days") })
-              }
-            />
-          </Box>
+        <Box>
+          <Box background="brand">
+            <Heading level="3" margin="small" alignSelf="center">
+              Daily Spender
+            </Heading>
+            <Box
+              animation="fadeIn"
+              tag="header"
+              align="center"
+              justify="center"
+              direction="row"
+            >
+              <Button
+                icon={<CaretPrevious />}
+                margin="small"
+                onClick={event =>
+                  this.setState({
+                    selectedDate: selectedDate.subtract(1, "days")
+                  })
+                }
+              />
+              <Text>{selectedDate.format("LL")}</Text>
+              <Button
+                icon={<CaretNext />}
+                margin="small"
+                onClick={event =>
+                  this.setState({ selectedDate: selectedDate.add(1, "days") })
+                }
+              />
+            </Box>
           </Box>
           <AppBar>
             <SpendingForm addNewSpending={this.addNewSpending} />
@@ -144,9 +178,14 @@ class App extends Component {
                 }
               />
             </FormField>
-            <Heading level="4" alignSelf="center" margin="small">
-              Daily Budget: {this.calculateDailyBudget()}
-            </Heading>
+            <Box direction="column" align="start">
+              <Heading level="4" alignSelf="center" margin="small">
+                Spent this month: {this.calculateMontlySpendings()}
+              </Heading>
+              <Heading level="4" alignSelf="center" margin="small">
+                Daily Available Budget: {this.calculateDailyBudget()}
+              </Heading>
+            </Box>
           </Box>
           <SpendingsTable spendingData={this.spendingsPerDay()} />
         </Box>
