@@ -1,5 +1,6 @@
 import React from "react";
 import { DataTable, Text, Box } from "grommet";
+import propTypes from 'prop-types';
 const SpendingsTable = props => {
   const columns = [
     {
@@ -40,4 +41,11 @@ const SpendingsTable = props => {
   );
 };
 
+// PropTypes
+SpendingsTable.propTypes = {
+  spendingData: propTypes.array
+};
+SpendingsTable.defaultProps = {
+  spendingData: []
+};
 export default SpendingsTable;

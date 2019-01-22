@@ -113,9 +113,9 @@ class App extends Component {
       this.state.selectedDate.daysInMonth() - this.state.selectedDate.date();
 
     daysLeft = daysLeft === 0 ? 1 : daysLeft;
-    const dailyBudget =
+    let dailyBudget =
       (this.state.monthlyBudget - this.calculateMontlySpendings()) / daysLeft;
-
+    if(dailyBudget < 0) dailyBudget = 0;
     return Math.round(dailyBudget);
   };
 
@@ -126,6 +126,7 @@ class App extends Component {
       if (spending.datestamp === this.state.selectedDate.format("L"))
         finalArray.push(spending);
     });
+
     return finalArray;
   };
   // MAIN render function for main component
@@ -136,8 +137,8 @@ class App extends Component {
     return (
       <Grommet theme={theme} full>
         <Box>
-          <Box background="brand">
-            <Heading level="3" margin="small" alignSelf="center">
+          <Box background="linear-gradient(90.77deg, #1f132b,#3a2657 )">
+            <Heading level="3" color="white" margin="small" alignSelf="center">
               Daily Spender
             </Heading>
             <Box
@@ -150,16 +151,18 @@ class App extends Component {
               <Button
                 icon={<CaretPrevious />}
                 margin="small"
+                color="white"
                 onClick={event =>
                   this.setState({
                     selectedDate: selectedDate.subtract(1, "days")
                   })
                 }
               />
-              <Text>{selectedDate.format("LL")}</Text>
+              <Text color="white">{selectedDate.format("LL")}</Text>
               <Button
                 icon={<CaretNext />}
                 margin="small"
+                color="white"
                 onClick={event =>
                   this.setState({ selectedDate: selectedDate.add(1, "days") })
                 }
@@ -197,7 +200,7 @@ class App extends Component {
 const theme = {
   global: {
     colors: {
-      brand: "#00739D"
+      brand: "#3a2657"
     },
     font: {
       family: "Roboto",

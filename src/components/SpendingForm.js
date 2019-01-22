@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Box, FormField, Button, Form } from "grommet";
 import { Add } from "grommet-icons";
-
+import propTypes from 'prop-types';
 class SpendingForm extends Component {
   onSubmit = value => {
     this.props.addNewSpending(value);
@@ -32,6 +32,7 @@ class SpendingForm extends Component {
             margin="small"
             alignSelf="center"
             label="Add spending"
+            name="submit"
             onClick={() => {}}
           />
         </Form>
@@ -39,5 +40,9 @@ class SpendingForm extends Component {
     );
   }
 }
+SpendingForm.propTypes = {
+  addNewSpending: propTypes.func
+};
+
 
 export default SpendingForm;
