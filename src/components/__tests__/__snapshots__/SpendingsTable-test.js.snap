@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render initial, empty layout 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 hOXeLj"
+>
+  <span
+    className="StyledText-sc-1sadyjn-0 hQNbky"
+  >
+    There are no spendings for selected day.
+  </span>
+</div>
+`;
+
+exports[`should to render some data in the table 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 hOXeLj"
+>
+  <table
+    className="StyledDataTable-xrlyjm-0 dtPYoK"
+  >
+    <thead
+      className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
+    >
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+      >
+        <th
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+          scope="col"
+        >
+          <button
+            className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="button"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 fAhsMq"
+            >
+              <span
+                className="StyledText-sc-1sadyjn-0 fWSbXS"
+              >
+                Name
+              </span>
+            </div>
+          </button>
+        </th>
+        <th
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+          scope="col"
+        >
+          <button
+            className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="button"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 jsZBut"
+            >
+              <span
+                className="StyledText-sc-1sadyjn-0 fWSbXS"
+              >
+                Value
+              </span>
+            </div>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
+    >
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 eAAZJM"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              ticket
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 jfDyzp"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              3.2
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 eAAZJM"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              magazine
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 jfDyzp"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              30
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 eAAZJM"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              pint beer
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 jfDyzp"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              10
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 eAAZJM"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              course
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 jfDyzp"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              45
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 eAAZJM"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              lol
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 jfDyzp"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              35
+            </span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
+    >
+      <tr
+        className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+      >
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 bGwdLS"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              Total
+            </span>
+          </div>
+        </td>
+        <td
+          className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 dAbHWk"
+          >
+            <span
+              className="StyledText-sc-1sadyjn-0 fWSbXS"
+            >
+              123.2
+            </span>
+          </div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;

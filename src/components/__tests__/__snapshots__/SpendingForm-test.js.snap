@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should display errors when click Add spending with empty fields) 1`] = `
+exports[`should display errors when click Add spending with empty fields 1`] = `
 <div
   className="StyledBox-sc-13pk1d4-0 eWmAkr"
   style={
@@ -109,7 +109,7 @@ exports[`should display errors when click Add spending with empty fields) 1`] = 
 </div>
 `;
 
-exports[`should render initial layout) 1`] = `
+exports[`should render initial layout 1`] = `
 <div
   className="StyledBox-sc-13pk1d4-0 eWmAkr"
   style={
