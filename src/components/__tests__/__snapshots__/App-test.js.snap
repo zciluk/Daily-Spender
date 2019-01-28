@@ -1,0 +1,2241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should add new spending with key generation and budget re-calculation 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          January 31, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="1500"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          200
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          1300
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <table
+        className="StyledDataTable-xrlyjm-0 dtPYoK"
+      >
+        <thead
+          className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 fAhsMq"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Name
+                  </span>
+                </div>
+              </button>
+            </th>
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 jsZBut"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Value
+                  </span>
+                </div>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  test
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  186
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  test2
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  14
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
+        >
+          <tr
+            className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGwdLS"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  Total
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 dAbHWk"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  200
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should change selected date when buttons are pressed 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          February 1, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="1500"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          0
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          56
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <span
+        className="StyledText-sc-1sadyjn-0 hQNbky"
+      >
+        There are no spendings for selected day.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should change selected date when buttons are pressed 2`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          January 30, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="1500"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          123.2
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          1377
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <span
+        className="StyledText-sc-1sadyjn-0 hQNbky"
+      >
+        There are no spendings for selected day.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should re-calculate spendings on monthly budget change 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          January 31, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="2615"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          123.2
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          2492
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <table
+        className="StyledDataTable-xrlyjm-0 dtPYoK"
+      >
+        <thead
+          className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 fAhsMq"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Name
+                  </span>
+                </div>
+              </button>
+            </th>
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 jsZBut"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Value
+                  </span>
+                </div>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  ticket
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  3.2
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  magazine
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  30
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  pint beer
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  10
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  course
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  45
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  lol
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  35
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
+        >
+          <tr
+            className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGwdLS"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  Total
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 dAbHWk"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  123.2
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should re-calculate spendings on monthly budget change 2`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          January 31, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="0"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          123.2
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          0
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <table
+        className="StyledDataTable-xrlyjm-0 dtPYoK"
+      >
+        <thead
+          className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 fAhsMq"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Name
+                  </span>
+                </div>
+              </button>
+            </th>
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 jsZBut"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Value
+                  </span>
+                </div>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  ticket
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  3.2
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  magazine
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  30
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  pint beer
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  10
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  course
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  45
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  lol
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  35
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
+        >
+          <tr
+            className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGwdLS"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  Total
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 dAbHWk"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  123.2
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render initial layout 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 IRSNj"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 huyoyH"
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 bivGO"
+      >
+        Daily Spender
+      </h3>
+      <header
+        className="StyledBox-sc-13pk1d4-0 bcEiBa"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonPrevious"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretPrevious"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+              transform="matrix(-1 0 0 1 24 0)"
+            />
+          </svg>
+        </button>
+        <span
+          className="StyledText-sc-1sadyjn-0 bJAFmT"
+        >
+          January 31, 2019
+        </span>
+        <button
+          className="StyledButton-sc-323bzc-0 bRaYdP"
+          id="buttonNext"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          type="button"
+        >
+          <svg
+            aria-label="CaretNext"
+            className="StyledIcon-ofa7kd-0 iOkQrb"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="none"
+              points="6 2 18 12 6 22"
+              stroke="#000"
+              strokeWidth="2"
+            />
+          </svg>
+        </button>
+      </header>
+    </div>
+    <header
+      className="StyledBox-sc-13pk1d4-0 bHUGFU"
+      style={
+        Object {
+          "zIndex": "1",
+        }
+      }
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 eWmAkr"
+        style={
+          Object {
+            "zIndex": "1",
+          }
+        }
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+                  name="value"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Value"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            className="StyledButton-sc-323bzc-0 eCngSn"
+            name="submit"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            type="submit"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 hHwlHq"
+            >
+              <svg
+                aria-label="Add"
+                className="StyledIcon-ofa7kd-0 iOkQrb"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+              <div
+                className="StyledBox__StyledBoxGap-sc-13pk1d4-1 iChEkS"
+              />
+              Add spending
+            </div>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div
+      className="StyledBox-sc-13pk1d4-0 ihtTyC"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 CAsMy"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 fsgjrx"
+        >
+          <label
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Monthly Budget
+          </label>
+        </div>
+        <div
+          className="StyledBox-sc-13pk1d4-0 gZSidW"
+        >
+          <div
+            className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+          >
+            <input
+              autoComplete="off"
+              className="StyledTextInput-sc-1x30a0s-0 cuRQxH"
+              id="monthlyBudget"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              value="1500"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 jmbpej"
+      >
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Spent this month: 
+          123.2
+        </h4>
+        <h4
+          className="StyledHeading-sc-1rdh4aw-0 kcykkH"
+        >
+          Daily Available Budget: 
+          1377
+        </h4>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 iaHsLO"
+    >
+      <table
+        className="StyledDataTable-xrlyjm-0 dtPYoK"
+      >
+        <thead
+          className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 fAhsMq"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Name
+                  </span>
+                </div>
+              </button>
+            </th>
+            <th
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
+              scope="col"
+            >
+              <button
+                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                type="button"
+              >
+                <div
+                  className="StyledBox-sc-13pk1d4-0 jsZBut"
+                >
+                  <span
+                    className="StyledText-sc-1sadyjn-0 fWSbXS"
+                  >
+                    Value
+                  </span>
+                </div>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
+        >
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  ticket
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  3.2
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  magazine
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  30
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  pint beer
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  10
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  course
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  45
+                </span>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 eAAZJM"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  lol
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 jfDyzp"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  35
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
+        >
+          <tr
+            className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
+          >
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGwdLS"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  Total
+                </span>
+              </div>
+            </td>
+            <td
+              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 dAbHWk"
+              >
+                <span
+                  className="StyledText-sc-1sadyjn-0 fWSbXS"
+                >
+                  123.2
+                </span>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+`;

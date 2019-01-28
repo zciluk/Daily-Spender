@@ -56,6 +56,7 @@ test('should return proper onSubmit function when fields are filled properly', (
     
     component.find('input[name="name"]').simulate('change', { target: { value: 'test' } });
     component.find('input[name="value"]').simulate('change', { target: { value: '123' } });
+    component.find('button[type="submit"]').simulate('click');
     component.find('form').simulate('submit', { preventDefault () {} });
     sinon.assert.calledWith(callback, expectedResult);
 });

@@ -14,38 +14,8 @@ import SpendingForm from "./SpendingForm";
 import SpendingsTable from "./SpendingsTable";
 import Moment from "moment";
 
-const DATA = [
-  {
-    key: 0,
-    datestamp: "01/20/2019",
-    name: "ticket",
-    value: 3.2
-  },
-  {
-    key: 1,
-    datestamp: "01/20/2019",
-    name: "magazine",
-    value: 30
-  },
-  {
-    key: 2,
-    datestamp: "01/20/2019",
-    name: "pint beer",
-    value: 10
-  },
-  {
-    key: 3,
-    datestamp: "01/20/2019",
-    name: "course",
-    value: 45
-  },
-  {
-    key: 4,
-    datestamp: "01/19/2019",
-    name: "lol",
-    value: 35
-  }
-];
+
+
 const AppBar = props => (
   <ResponsiveContext.Consumer>
     {size => (
@@ -64,11 +34,15 @@ const AppBar = props => (
 );
 
 class App extends Component {
-  state = {
-    selectedDate: Moment(),
-    monthlyBudget: 1500,
-    spendingData: DATA
-  };
+  constructor(props) {
+    super();
+    this.state = {
+      selectedDate: Moment(),
+      monthlyBudget: 1500,
+      spendingData: props.initialData
+    };
+  }
+  
 
   // calculates spendings in current month
   calculateMontlySpendings = () => {
@@ -151,6 +125,7 @@ class App extends Component {
                 icon={<CaretPrevious />}
                 margin="small"
                 color="white"
+                id="buttonPrevious"
                 onClick={event =>
                   this.setState({
                     selectedDate: selectedDate.subtract(1, "days")
@@ -162,6 +137,7 @@ class App extends Component {
                 icon={<CaretNext />}
                 margin="small"
                 color="white"
+                id="buttonNext"
                 onClick={event =>
                   this.setState({ selectedDate: selectedDate.add(1, "days") })
                 }
@@ -175,6 +151,7 @@ class App extends Component {
             <FormField label="Monthly Budget">
               <TextInput
                 value={`${monthlyBudget}`}
+                id="monthlyBudget"
                 onChange={event =>
                   this.setState({ monthlyBudget: event.target.value })
                 }
