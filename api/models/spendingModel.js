@@ -1,7 +1,11 @@
 var mongoose = require('mongoose');
 // Schema for sent Spendings
 var spendingSchema = mongoose.Schema({
-    datestamp: {
+    key: {
+        type: String,
+        required: true
+    },
+    date: {
         type: String,
         required: true
     },

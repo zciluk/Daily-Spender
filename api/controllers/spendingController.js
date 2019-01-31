@@ -17,7 +17,8 @@ exports.getAllSpendings = function(req, res) {
 };
 exports.newSpending = function(req, res) {
   var spending = new Spending();
-  spending.datestamp = req.body.datestamp;
+  spending.key = req.body.key;
+  spending.date = req.body.date;
   spending.name = req.body.name;
   spending.value  = req.body.value;
   spending.save(function(err) {

@@ -13,7 +13,7 @@ import { CaretNext, CaretPrevious } from "grommet-icons";
 import SpendingForm from "./SpendingForm";
 import SpendingsTable from "./SpendingsTable";
 import Moment from "moment";
-
+import API from '../apis'
 
 
 
@@ -43,7 +43,15 @@ class App extends Component {
       spendingData: props.initialData
     };
   }
-  
+  componentDidMount() {
+
+    // TODO : statuses and error handling
+    API.get(`/spendings`)
+      .then(res => {
+        const responseData = res.data;
+        this.setState({ spendingData: [...responseData.data] });
+      })
+  }
 
   // calculates spendings in current month
   calculateMontlySpendings = () => {
@@ -71,6 +79,14 @@ class App extends Component {
       value: Number(value.value)
     };
     this.setState({ spendingData: [...this.state.spendingData, newelement] });
+    // TODO: make API call at the beginning - if throws an error, then don't add element to state collection
+    API({
+      method: 'post',
+      url: '/spendings',
+      data: {
+        ...newelement
+      }
+    });
   };
 
   // calculates Daily Budget UI label
