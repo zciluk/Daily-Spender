@@ -16,6 +16,7 @@ import Moment from "moment";
 
 
 
+
 const AppBar = props => (
   <ResponsiveContext.Consumer>
     {size => (
@@ -49,7 +50,7 @@ class App extends Component {
     let monthlySpendings = 0;
 
     this.state.spendingData.forEach(spending => {
-      const parsedDate = Moment(spending.datestamp, "MM-DD-YYYY");
+      const parsedDate = Moment(spending.date, 'MM/DD/YYYY');
       if (
         parsedDate.month() === this.state.selectedDate.month() &&
         parsedDate.year() === this.state.selectedDate.year()
@@ -60,20 +61,12 @@ class App extends Component {
 
     return monthlySpendings;
   };
-  // generates unique key value for new elements in array
-  generateUniqueKey = () => {
-    let key = 0;
-    if (this.state.spendingData.length > 0) {
-      key = Math.max(...this.state.spendingData.map(object => object.key), 0);
-      key++;
-    }
-    return key;
-  };
+  
   // adds new spending to DATA array
-  addNewSpending = value => {
+  addNewSpending = value => { 
     const newelement = {
-      key: this.generateUniqueKey(),
-      datestamp: this.state.selectedDate.format("L"),
+      key: +Moment(),
+      date: this.state.selectedDate.format("L"),
       name: value.name,
       value: Number(value.value)
     };
@@ -96,7 +89,7 @@ class App extends Component {
   spendingsPerDay = () => {
     const finalArray = [];
     this.state.spendingData.forEach(spending => {
-      if (spending.datestamp === this.state.selectedDate.format("L"))
+      if (spending.date === this.state.selectedDate.format("L"))
         finalArray.push(spending);
     });
 

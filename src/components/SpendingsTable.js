@@ -33,7 +33,7 @@ const SpendingsTable = props => {
           margin="medium"
           primaryKey="key"
           columns={columns}
-          data={props.spendingData}
+          data={props.spendingData }
           sortable
         />
       )}

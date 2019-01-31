@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should add new spending with key generation and budget re-calculation 1`] = `
+exports[`should add new spending with empty DATA and new budget re-calculation 1`] = `
 <div
   className="StyledGrommet-sc-19lkkz7-0 bcjtJw"
 >

@@ -11,31 +11,31 @@ const exampleDate = Moment(testDate).format("L");
 const DATA = [
     {
         key: 0,
-        datestamp: exampleDate,
+        date: exampleDate,
         name: "ticket",
         value: 3.2
       },
       {
         key: 1,
-        datestamp: exampleDate,
+        date: exampleDate,
         name: "magazine",
         value: 30
       },
       {
         key: 2,
-        datestamp: exampleDate,
+        date: exampleDate,
         name: "pint beer",
         value: 10
       },
       {
         key: 3,
-        datestamp: exampleDate,
+        date: exampleDate,
         name: "course",
         value: 45
       },
       {
         key: 4,
-        datestamp: exampleDate,
+        date: exampleDate,
         name: "lol",
         value: 35
       }
@@ -87,7 +87,7 @@ test('should re-calculate spendings on monthly budget change', () => {
 
 
 // adding spending and generating new key with EMPTY data 
-test('should add new spending with key generation and budget re-calculation', () => {
+test('should add new spending with empty DATA and new budget re-calculation', () => {
     
     const component = renderer.create(
         <App initialData={[]}/>
