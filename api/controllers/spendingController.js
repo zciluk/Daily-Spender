@@ -32,3 +32,12 @@ exports.newSpending = function(req, res) {
     }
   });
 };
+exports.deleteSpending = function(req, res) {
+  Spending.deleteOne({key: req.body.key }, function(err) {
+    if(err) {
+      res.json({status: false, error: "Deleting spending is not successfull"});
+      return;
+    }
+    res.json({status: true, message: "Spending deleted successfully!!"});
+  });
+};

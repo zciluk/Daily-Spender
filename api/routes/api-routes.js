@@ -4,7 +4,8 @@ var spendingController = require('../controllers/spendingController');
 
 router.route('/spendings')
     .get(spendingController.getAllSpendings)
-    .post(spendingController.newSpending);
+    .post(spendingController.newSpending)
+    .delete(spendingController.deleteSpending);
    
 
 module.exports = router;
