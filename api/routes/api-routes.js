@@ -1,5 +1,6 @@
 let router = require('express').Router();
 var spendingController = require('../controllers/spendingController');
+
 // Routes - GET and POST
 
 router.route('/spendings')

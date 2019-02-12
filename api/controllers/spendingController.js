@@ -4,15 +4,16 @@ exports.getAllSpendings = function(req, res) {
     Spending.get(function(err, results) {
     if (err) {
       res.json({
-        status: "error",
+        status: "500",
         message: err
       });
-    }
+    } else {
     res.json({
       status: "200",
       message: "Records received succesfuly",
       data: results
     });
+  }
   });
 };
 exports.newSpending = function(req, res) {
@@ -23,7 +24,11 @@ exports.newSpending = function(req, res) {
   spending.value  = req.body.value;
   spending.save(function(err) {
     if (err) {
-      res.send(err);
+      res.json({
+        status: "500",
+        message: err
+      });
+    
     } else {
       res.json({
         message: "New record created in database.",
@@ -33,11 +38,18 @@ exports.newSpending = function(req, res) {
   });
 };
 exports.deleteSpending = function(req, res) {
-  Spending.deleteOne({key: req.body.key }, function(err) {
+  
+  Spending.findOneAndDelete({key: req.body.key }, function(err, result) {
     if(err) {
-      res.json({status: false, error: "Deleting spending is not successfull"});
+      res.json({status: "500", error: "Deleting spending is not successfull"});
       return;
+    }  else if(!result){ 
+        res.json({status: "404", message: "Record to be deleted do not exists."});
+    return;
+        
+    } else {
+    res.json({status: "200", message: `Spending deleted successfully!!`});
     }
-    res.json({status: true, message: "Spending deleted successfully!!"});
   });
+
 };

@@ -26,7 +26,13 @@ app.use((req, res, next) => {
     next();
 });
 app.use('/', apiRoutes);
+// additional error handling
 
+app.get('*', function(req, res, next) {
+    let err = new Error('Page Not Found');
+    err.statusCode = 404;
+    next(err);
+  });
 app.listen(port, function () {
     console.log("Running on port " + port);
 });
