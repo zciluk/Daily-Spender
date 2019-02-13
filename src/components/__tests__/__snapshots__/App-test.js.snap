@@ -206,173 +206,24 @@ exports[`should add new spending with empty DATA and new budget re-calculation 1
           className="StyledHeading-sc-1rdh4aw-0 kcykkH"
         >
           Spent this month: 
-          200
+          0
         </h4>
         <h4
           className="StyledHeading-sc-1rdh4aw-0 kcykkH"
         >
           Daily Available Budget: 
-          1300
+          1500
         </h4>
       </div>
     </div>
     <div
       className="StyledBox-sc-13pk1d4-0 iaHsLO"
     >
-      <table
-        className="StyledDataTable-xrlyjm-0 dtPYoK"
+      <span
+        className="StyledText-sc-1sadyjn-0 hQNbky"
       >
-        <thead
-          className="StyledDataTable__StyledDataTableHeader-xrlyjm-3 bAIczD StyledTable__StyledTableHeader-sc-1m3u5g-4 dHaGyd"
-        >
-          <tr
-            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
-          >
-            <th
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
-              scope="col"
-            >
-              <button
-                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                type="button"
-              >
-                <div
-                  className="StyledBox-sc-13pk1d4-0 fAhsMq"
-                >
-                  <span
-                    className="StyledText-sc-1sadyjn-0 fWSbXS"
-                  >
-                    Name
-                  </span>
-                </div>
-              </button>
-            </th>
-            <th
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 hNAgVv"
-              scope="col"
-            >
-              <button
-                className="Sorter__SorterButton-fzr2yb-0 bVTNxY StyledButton-sc-323bzc-0 kjdfHK"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                type="button"
-              >
-                <div
-                  className="StyledBox-sc-13pk1d4-0 jsZBut"
-                >
-                  <span
-                    className="StyledText-sc-1sadyjn-0 fWSbXS"
-                  >
-                    Value
-                  </span>
-                </div>
-              </button>
-            </th>
-          </tr>
-        </thead>
-        <tbody
-          className="StyledDataTable__StyledDataTableBody-xrlyjm-2 hbZQKY"
-        >
-          <tr
-            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
-          >
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 eAAZJM"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  test
-                </span>
-              </div>
-            </td>
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 jfDyzp"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  186
-                </span>
-              </div>
-            </td>
-          </tr>
-          <tr
-            className="StyledDataTable__StyledDataTableRow-xrlyjm-1 ezpFws"
-          >
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 eAAZJM"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  test2
-                </span>
-              </div>
-            </td>
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 ezepRo"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 jfDyzp"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  14
-                </span>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot
-          className="StyledDataTable__StyledDataTableFooter-xrlyjm-4 fvKhma StyledTable__StyledTableFooter-sc-1m3u5g-5 zMIVX"
-        >
-          <tr
-            className="StyledTable__StyledTableRow-sc-1m3u5g-2 kXgizX"
-          >
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 bGwdLS"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  Total
-                </span>
-              </div>
-            </td>
-            <td
-              className="StyledTable__StyledTableCell-sc-1m3u5g-0 edcjKh"
-            >
-              <div
-                className="StyledBox-sc-13pk1d4-0 dAbHWk"
-              >
-                <span
-                  className="StyledText-sc-1sadyjn-0 fWSbXS"
-                >
-                  200
-                </span>
-              </div>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
+        There are no spendings for selected day.
+      </span>
     </div>
   </div>
 </div>

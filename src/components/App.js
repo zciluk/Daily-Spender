@@ -35,24 +35,44 @@ const AppBar = props => (
 );
 
 class App extends Component {
+  
   constructor(props) {
     super();
     this.state = {
       selectedDate: Moment(),
       monthlyBudget: 1500,
-      spendingData: props.initialData
+      spendingData: props.initialData,
+      errorMessage: "",
+     
     };
   }
   componentDidMount() {
-
-    // TODO : statuses and error handling
+    this.syncSpendings();
+  }
+  syncSpendings = () =>{
+      // TODO : statuses and error handling
     API.get(`/spendings`)
       .then(res => {
         const responseData = res.data;
         this.setState({ spendingData: [...responseData.data] });
       })
-  }
+      .catch(error => {
+        if (!error.status) {
+          this.showErrorMessage("No connection estabilished with database. Spendings are not loaded.");
+        }
+        if(error.status===500) {
+          this.showErrorMessage("There was a problem when downloading spendings.");
+        }
+    });
 
+  }
+  // shows error message for fixed time
+  showErrorMessage = message => {
+    this.setState({ errorMessage: message });
+    setTimeout(() => {
+      this.setState({ errorMessage: "" });
+    }, 5000);
+  }
   // calculates spendings in current month
   calculateMontlySpendings = () => {
     let monthlySpendings = 0;
@@ -78,7 +98,7 @@ class App extends Component {
       name: value.name,
       value: Number(value.value)
     };
-    this.setState({ spendingData: [...this.state.spendingData, newelement] });
+    
     // TODO: make API call at the beginning - if throws an error, then don't add element to state collection
     API({
       method: 'post',
@@ -86,6 +106,21 @@ class App extends Component {
       data: {
         ...newelement
       }
+      }) 
+      .then(response => {
+        if(response.status===200) {
+        this.setState({ spendingData: [...this.state.spendingData, newelement] });
+      }
+      })
+      .catch(error => {
+        if (!error.status) {
+          this.showErrorMessage("No connection estabilished with database. Spending will not be added.");
+        } else 
+        if(error.status===500) {
+          this.showErrorMessage("There was a problem when adding spending. Spending will be not added.");
+        } else {
+          this.showErrorMessage("Unknown error happened.");
+        }
     });
   };
 
@@ -115,7 +150,7 @@ class App extends Component {
   render() {
     const { selectedDate } = this.state;
     const { monthlyBudget } = this.state;
-
+   
     return (
       <Grommet theme={theme} full>
         <Box>
@@ -155,7 +190,23 @@ class App extends Component {
           </Box>
           <AppBar>
             <SpendingForm addNewSpending={this.addNewSpending} />
+            { this.state.errorMessage!=="" &&
+            <Box 
+              animation= {[{
+                "type": "fadeIn",
+                "delay": 0,
+                "duration": 2000,
+              }, {
+                "type": "fadeOut",
+                "delay": 3000,
+                "duration": 2000,
+              }]}
+              background= "status-error">
+                {this.state.errorMessage}
+            </Box>  
+            } 
           </AppBar>
+           
           <Box align="center" pad="medium" direction="row" justify="center">
             <FormField label="Monthly Budget">
               <TextInput
