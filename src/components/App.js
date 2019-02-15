@@ -59,9 +59,11 @@ class App extends Component {
       .catch(error => {
         if (!error.status) {
           this.showErrorMessage("No connection estabilished with database. Spendings are not loaded.");
-        }
+        } else 
         if(error.status===500) {
           this.showErrorMessage("There was a problem when downloading spendings.");
+        }  else {
+          this.showErrorMessage("Unknown error happened. Spendings are not loaded.");
         }
     });
 
@@ -117,9 +119,9 @@ class App extends Component {
           this.showErrorMessage("No connection estabilished with database. Spending will not be added.");
         } else 
         if(error.status===500) {
-          this.showErrorMessage("There was a problem when adding spending. Spending will be not added.");
+          this.showErrorMessage("There was a problem when adding spending. Spending will not be added.");
         } else {
-          this.showErrorMessage("Unknown error happened.");
+          this.showErrorMessage("Unknown error happened. Spending will not be added.");
         }
     });
   };
