@@ -13,9 +13,7 @@ import { CaretNext, CaretPrevious } from "grommet-icons";
 import SpendingForm from "./SpendingForm";
 import SpendingsTable from "./SpendingsTable";
 import Moment from "moment";
-import API from '../apis'
-
-
+import API from "../apis";
 
 const AppBar = props => (
   <ResponsiveContext.Consumer>
@@ -35,7 +33,6 @@ const AppBar = props => (
 );
 
 class App extends Component {
-  
   constructor(props) {
     super();
     this.state = {
@@ -49,8 +46,8 @@ class App extends Component {
   componentDidMount() {
     this.syncSpendings();
   }
-  syncSpendings = () =>{
-      // TODO : statuses and error handling
+  syncSpendings = () => {
+    // TODO : statuses and error handling
     API.get(`/spendings`)
       .then(res => {
         const responseData = res.data;
@@ -58,29 +55,33 @@ class App extends Component {
       })
       .catch(error => {
         if (!error.status) {
-          this.showErrorMessage("No connection estabilished with database. Spendings are not loaded.");
-        } else 
-        if(error.status===500) {
-          this.showErrorMessage("There was a problem when downloading spendings.");
-        }  else {
-          this.showErrorMessage("Unknown error happened. Spendings are not loaded.");
+          this.showErrorMessage(
+            "No connection estabilished with database. Spendings are not loaded."
+          );
+        } else if (error.status === 500) {
+          this.showErrorMessage(
+            "There was a problem when downloading spendings."
+          );
+        } else {
+          this.showErrorMessage(
+            "Unknown error happened. Spendings are not loaded."
+          );
         }
-    });
-
-  }
+      });
+  };
   // shows error message for fixed time
   showErrorMessage = message => {
     this.setState({ errorMessage: message });
     setTimeout(() => {
       this.setState({ errorMessage: "" });
     }, 5000);
-  }
+  };
   // calculates spendings in current month
   calculateMontlySpendings = () => {
     let monthlySpendings = 0;
 
     this.state.spendingData.forEach(spending => {
-      const parsedDate = Moment(spending.date, 'MM/DD/YYYY');
+      const parsedDate = Moment(spending.date, "MM/DD/YYYY");
       if (
         parsedDate.month() === this.state.selectedDate.month() &&
         parsedDate.year() === this.state.selectedDate.year()
@@ -91,39 +92,46 @@ class App extends Component {
 
     return monthlySpendings;
   };
-  
+
   // adds new spending to DATA array
-  addNewSpending = value => { 
+  addNewSpending = value => {
     const newelement = {
       key: +Moment(),
       date: this.state.selectedDate.format("L"),
       name: value.name,
       value: Number(value.value)
     };
-    
+
     // TODO: make API call at the beginning - if throws an error, then don't add element to state collection
     API({
-      method: 'post',
-      url: '/spendings',
+      method: "post",
+      url: "/spendings",
       data: {
         ...newelement
       }
-      }) 
+    })
       .then(response => {
-        if(response.status===200) {
-        this.setState({ spendingData: [...this.state.spendingData, newelement] });
-      }
+        if (response.status === 200) {
+          this.setState({
+            spendingData: [...this.state.spendingData, newelement]
+          });
+        }
       })
       .catch(error => {
         if (!error.status) {
-          this.showErrorMessage("No connection estabilished with database. Spending will not be added.");
-        } else 
-        if(error.status===500) {
-          this.showErrorMessage("There was a problem when adding spending. Spending will not be added.");
+          this.showErrorMessage(
+            "No connection estabilished with database. Spending will not be added."
+          );
+        } else if (error.status === 500) {
+          this.showErrorMessage(
+            "There was a problem when adding spending. Spending will not be added."
+          );
         } else {
-          this.showErrorMessage("Unknown error happened. Spending will not be added.");
+          this.showErrorMessage(
+            "Unknown error happened. Spending will not be added."
+          );
         }
-    });
+      });
   };
 
   // calculates Daily Budget UI label
@@ -134,7 +142,7 @@ class App extends Component {
     daysLeft = daysLeft === 0 ? 1 : daysLeft;
     let dailyBudget =
       (this.state.monthlyBudget - this.calculateMontlySpendings()) / daysLeft;
-    if(dailyBudget < 0) dailyBudget = 0;
+    if (dailyBudget < 0) dailyBudget = 0;
     return Math.round(dailyBudget);
   };
 
@@ -152,7 +160,7 @@ class App extends Component {
   render() {
     const { selectedDate } = this.state;
     const { monthlyBudget } = this.state;
-   
+
     return (
       <Grommet theme={theme} full>
         <Box>
@@ -192,23 +200,27 @@ class App extends Component {
           </Box>
           <AppBar>
             <SpendingForm addNewSpending={this.addNewSpending} />
-            { this.state.errorMessage!=="" &&
-            <Box 
-              animation= {[{
-                "type": "fadeIn",
-                "delay": 0,
-                "duration": 2000,
-              }, {
-                "type": "fadeOut",
-                "delay": 3000,
-                "duration": 2000,
-              }]}
-              background= "status-error">
+            {this.state.errorMessage !== "" && (
+              <Box
+                animation={[
+                  {
+                    type: "fadeIn",
+                    delay: 0,
+                    duration: 2000
+                  },
+                  {
+                    type: "fadeOut",
+                    delay: 3000,
+                    duration: 2000
+                  }
+                ]}
+                background="status-error"
+              >
                 {this.state.errorMessage}
-            </Box>  
-            } 
+              </Box>
+            )}
           </AppBar>
-           
+
           <Box align="center" pad="medium" direction="row" justify="center">
             <FormField label="Monthly Budget">
               <TextInput

@@ -9,8 +9,8 @@ Project comes with client side written in <b>React.js</b> with usage of <b>Gromm
 It comes also with backend written in <b>Node (Express)</b> with <b>MongoDB</b> as database. Environment can be quickly re-reacted by using Docker container. To use just run command <b>docker-compose up --build</b>. The server will be running on [http://localhost:3001](http://localhost:3001). <br><br>
 
 TODOs:
-- tests for the back-end part 
+- ~~tests for the back-end part~~ 
 - e2e tests
-- improve handling API requests from client side (statuses, error handling)
+- ~~improve handling API requests from client side (statuses, error handling)~~
 - client tests for axios requests
 - add possibilty to delete a record 

@@ -2,7 +2,7 @@ import React from 'react';
 import App from '../App.js';
 import renderer from 'react-test-renderer';
 import Moment from 'moment';
-
+ 
 const testDate = 1548889200000; // Jan 31 2019 00:00 - Fixed date for snapshot testing. This date is also set to test edge case (in calculateDailyBudget()) with last day of the month, and to check values calculations during month change
 
 const exampleDate = Moment(testDate).format("L");
