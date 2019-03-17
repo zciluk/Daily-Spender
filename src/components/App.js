@@ -14,6 +14,7 @@ import SpendingForm from "./SpendingForm";
 import SpendingsTable from "./SpendingsTable";
 import Moment from "moment";
 import API from "../apis";
+import { errorStrings } from "./data/errorStrings";
 
 const AppBar = props => (
   <ResponsiveContext.Consumer>
@@ -39,8 +40,7 @@ class App extends Component {
       selectedDate: Moment(),
       monthlyBudget: 1500,
       spendingData: props.initialData,
-      errorMessage: "",
-     
+      errorMessage: ""
     };
   }
   componentDidMount() {
@@ -56,15 +56,15 @@ class App extends Component {
       .catch(error => {
         if (!error.status) {
           this.showErrorMessage(
-            "No connection estabilished with database. Spendings are not loaded."
+            errorStrings.spendingGetConnectionError
           );
         } else if (error.status === 500) {
           this.showErrorMessage(
-            "There was a problem when downloading spendings."
+            errorStrings.spendingGet500Error
           );
         } else {
           this.showErrorMessage(
-            "Unknown error happened. Spendings are not loaded."
+            errorStrings.spendingGetUnknownError
           );
         }
       });
@@ -102,7 +102,6 @@ class App extends Component {
       value: Number(value.value)
     };
 
-    // TODO: make API call at the beginning - if throws an error, then don't add element to state collection
     API({
       method: "post",
       url: "/spendings",
@@ -120,15 +119,15 @@ class App extends Component {
       .catch(error => {
         if (!error.status) {
           this.showErrorMessage(
-            "No connection estabilished with database. Spending will not be added."
+            errorStrings.spendingPostConnectionError
           );
         } else if (error.status === 500) {
           this.showErrorMessage(
-            "There was a problem when adding spending. Spending will not be added."
+            errorStrings.spendingPost500Error
           );
         } else {
           this.showErrorMessage(
-            "Unknown error happened. Spending will not be added."
+            errorStrings.spendingPostUnknwonError
           );
         }
       });
@@ -215,6 +214,7 @@ class App extends Component {
                   }
                 ]}
                 background="status-error"
+                id="error_field"
               >
                 {this.state.errorMessage}
               </Box>

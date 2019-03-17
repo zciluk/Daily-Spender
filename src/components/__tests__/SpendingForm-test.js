@@ -22,7 +22,7 @@ test('should display errors when click Add spending with empty fields', () => {
     const component = renderer.create(
         <SpendingForm/>
     );
-    const fakeEvent = { preventDefault: () => console.log('preventDefault') };
+    const fakeEvent = { preventDefault: () => console.log() };
     component.root.findByType('form').props.onSubmit(fakeEvent);
 
     let tree = component.toJSON();

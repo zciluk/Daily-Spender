@@ -39,5 +39,8 @@
       "src/**/*.{js,jsx}",
       "!src/index.js"
     ]
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.16.0"
   }
 }
